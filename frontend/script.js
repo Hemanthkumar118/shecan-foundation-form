@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:5000/api/auth";
+const API_URL = "https://shecan-backend-rgxo.onrender.com/api/auth";
 
 const registerForm = document.getElementById("registerForm");
 const loginForm = document.getElementById("loginForm");
