@@ -7,9 +7,13 @@ dotenv.config();
 
 const app = express();
 
-app.use(cors({
-  origin: "*"
-}));
+app.use(
+  cors({
+    origin: "https://shecan-foundation-hemanth.netlify.app",
+    methods: ["GET", "POST"],
+    credentials: true
+  })
+);
 app.use(express.json());
 
 mongoose.connect(process.env.MONGO_URL)
